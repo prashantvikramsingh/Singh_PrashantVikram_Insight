@@ -1,11 +1,14 @@
-id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
-1000000001,Smith,James,AMBIEN,100
-1000000002,Garcia,Maria,AMBIEN,200
-1000000003,Johnson,James,CHLORPROMAZINE,1000
-1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000
-1000000005,Smith,David,BENZTROPINE MESYLATE,1500
-1000000001,Smith,James,AMBIEN,100
-1000000002,Garcia,Maria,AMBIEN,200
-1000000003,Johnson,James,CHLORPROMAZINE,1000
-1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000
-1000000005,Smith,David,BENZTROPINE MESYLATE,1500
+# Pharmacy Counting
+
+### *Steps:*
+- Read the file containing the records and created a list of lists to store all the records
+- Created a dictionary with Drug name as key and its Total Cost as the value
+- Created a dictionary with Drug name as key and count of it's total unique prescribers as the value
+- Combined the two dictionaries on Drug name and stored it as unsorted dictionary
+- Sorted the unsorted dictionary based on Total Cost of a drug
+- Created the output file
+
+### *Additional Libraries used:*
+- operator -> for sorting the dictionary
+- csv -> for writing the output file
+- sys -> for getting the user input
